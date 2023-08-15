@@ -1,0 +1,143 @@
+/* :root{ */
+    /* --links: #1e5d2a;
+    --hover-focus: #0b498c;
+    --active: #a02020; */
+
+    /* --table-border: 2px solid #2125ad;
+    --button-font-size:16px;
+    --button-submit-bg: #2c662c;
+    --box-shadow:1.5px 1.5px #1f1e1f; */
+/* } */
+
+*{
+    /* defines total width of the element */
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 241, 255);
+    color: #5c0856;
+    font-weight: 400;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    /* font-style: italic; */
+    text-decoration: none;
+
+}
+
+.page-header{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    
+}
+.page-header__item{
+    /* on this order -- flex-grow, flex-shrink, flex-basis */
+   flex: 0 1 200px;
+}
+.page-header__item:last-child{
+flex-grow: 1;
+text-align: right;
+}
+.navigation-list__item--active{
+    text-decoration: none;
+}
+.navigation-list{
+    list-style-type: none;
+}
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.navigation-list__item{
+    transition: undefined;
+}
+.navigation-list__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.navigation-list__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    /* grid-template-rows: 1 fr; */
+    /* grid-template-rows: 300px 300px; */
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid_item{
+    background-color: #bcc2cb;
+    padding: 15px;
+    color: #810578;
+
+}
+
+/* .grid_item:nth-child(1){
+    grid-column: span 2;
+}
+.grid_item:nth-child(3){
+    grid-column: 3/3;
+    grid-row: 1/4;
+} */
+.grid_item:last-child{
+    /* last child position : should be third column , first row, and end at beginning of the third row*/
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* another way to declare */
+    /* grid-column: 3 /2;
+    grid-row: 2 / 3; */
+    /* grid-column: auto;
+    grid-row: auto; */
+}
+
+.page-footer{
+    
+    display: flex;
+    clear: both;
+    flex-direction: column;
+    text-align: center;
+    
+}
+@media all and (max-width: 500px){
+    .grid{
+        grid-template-columns: 1fr;
+
+    }
+      
+}
+@media all and (min-width: 500px) and (max-width:750px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+       
+    }
+}
+@media all and (max-width:750px){
+    .grid{
+        
+        grid-gap: 10px;
+        
+
+    }
+    .grid_item:last-child{
+        grid-column: auto;
+        grid-row: auto;
+
+    }
+    h1{
+        font-size: smaller;
+        
+    }
+   
+}

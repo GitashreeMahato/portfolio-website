@@ -1,0 +1,252 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    /* defines total width of the element */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    /* background-color: aliceblue; */
+    color:#a00b96;
+    background-color: #dfd7e1;
+    font-weight: 400;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    /* font-style: italic; */
+    text-decoration: none;
+
+}
+.page-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    
+}
+.page-header__item{
+    /* on this order -- flex-grow, flex-shrink, flex-basis */
+   -webkit-box-flex: 0;
+       -ms-flex: 0 1 200px;
+           flex: 0 1 200px;
+   
+}
+.page-header__item:last-child{
+-webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+text-align: right;
+}
+.navigation-list__item--active{
+    text-decoration: none;
+}
+.navigation-list{
+    list-style-type: none;
+}
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.navigation-list__item{
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.navigation-list__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.navigation-list__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin-top:2px;
+}
+.about-me{
+    text-align: center;
+}
+table{
+    
+   border: 2px solid #2125ad;
+   margin: 50px 500px ;
+
+}
+main p{
+    font-family: cursive;
+    font-size: larger;
+    /* color: rgb(143, 6, 143); */
+    color: #810578;
+    padding: 0px 20px;
+}
+
+caption{
+    padding: 20px;
+    font-size: 20px;
+}
+th{
+    
+    padding: 10px;
+     
+}
+td{
+    
+    padding: 10px;
+     
+}
+.button{
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #2c662c;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    /* border-bottom: 2px solid #1f1e1f; */
+    -webkit-box-shadow: 1.5px 1.5px #1f1e1f;
+            box-shadow: 1.5px 1.5px #1f1e1f;
+    /* transition-duration: 0.2s;
+    transition-property: opacity;  */
+    
+    -webkit-transition: opacity 0.2s;
+    
+    -o-transition: opacity 0.2s;
+    
+    transition: opacity 0.2s;    /* shorthand of transition */
+}
+.button:hover, .button:focus{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@-webkit-keyframes color-change{
+    0%{
+        fill: #dcd732;
+        
+    }
+    50%{
+        fill: #a75511;
+        -webkit-transform: scale(2,2);
+                transform: scale(2,2);
+    }
+    75%{
+        fill: #cc3f1f;
+    }
+    100%{
+        fill: #314f0d;
+    }
+}
+
+
+@keyframes color-change{
+    0%{
+        fill: #dcd732;
+        
+    }
+    50%{
+        fill: #a75511;
+        -webkit-transform: scale(2,2);
+                transform: scale(2,2);
+    }
+    75%{
+        fill: #cc3f1f;
+    }
+    100%{
+        fill: #314f0d;
+    }
+}
+.sun{
+    /* animation-duration: 2s;
+    animation-name: color-change;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    /* shorthand */
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+    
+}
+@-webkit-keyframes cloud-move{
+    from{
+        -webkit-transform: translate(0,50px);
+                transform: translate(0,50px);
+    }
+    to{
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+@keyframes cloud-move{
+    from{
+        -webkit-transform: translate(0,50px);
+                transform: translate(0,50px);
+    }
+    to{
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+.cloud-front{
+    /* long way */
+    /* animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+
+    /*  shorthand */
+    -webkit-animation: 20s cloud-move infinite alternate linear;
+            animation: 20s cloud-move infinite alternate linear;
+}
+@-webkit-keyframes cloud-move-reverse{
+    from{
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to{
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
+@keyframes cloud-move-reverse{
+    from{
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+    to{
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
+.cloud-back{
+    -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
+            animation: 10s cloud-move-reverse infinite alternate linear;
+}
+
+
+.page-footer{
+    /* text-align: center;
+    margin: 300px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    
+}

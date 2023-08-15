@@ -1,0 +1,203 @@
+:root{
+    --primary-color: #dfd7e1;
+    --secondary-color: #a00b96;
+    --content-color: #810578;
+    --highlighted: #184fbc;
+    --tertiary-font-color: #ffffff;
+    --links: #32a141;
+    --links-hover-focus: #0b498c;
+    --active: #a02020;
+    --font-thickness:400;
+    --font-size: 20px;
+    --header-padding: 15px;
+    --padding-primary:20px;
+    --padding-secondary: 10px;
+    --transition: all 1s;
+    --none: none;
+    --center: center;
+
+    --table-border: 2px solid #2125ad;
+    --button-font-size:16px;
+    --button-submit-bg: #2c662c;
+    --box-shadow:1.5px 1.5px #1f1e1f;
+
+    --animation-sun: #dcd732;
+    --animation-sun-transition50: #a75511;
+    --animation-sun-transition75: #cc3f1f;
+    --animation-sun-transition100: #314f0d;
+    --page-header-footer:flex;
+
+
+}
+
+
+
+*{
+    /* defines total width of the element */
+    box-sizing: border-box;
+}
+body{
+    /* background-color: aliceblue; */
+    color:var(--secondary-color);
+    background-color: var(--primary-color) ;
+    font-weight: var(--font-thickness);
+    font-family: 'Crimson Text', serif;
+    font-size: var(--font-size);
+    line-height: 1.6;
+    /* font-style: italic; */
+    text-decoration: var(--none);
+
+}
+.page-header{
+    display: var(--page-header-footer);
+    width: 100%;
+    padding: var(--header-padding);
+    
+}
+.page-header__item{
+    /* on this order -- flex-grow, flex-shrink, flex-basis */
+   flex: 0 1 200px;
+   
+}
+.page-header__item:last-child{
+flex-grow: 1;
+text-align: right;
+}
+.navigation-list__item--active{
+    text-decoration: var(--none);
+}
+.navigation-list{
+    list-style-type: var(--none);
+}
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.navigation-list__item{
+    transition: var(--transition);
+}
+.navigation-list__item:hover, .navigation-list__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: var(--none);
+}
+
+h1{
+    text-align: var(--center);
+    margin-top:2px;
+}
+.about-me{
+    text-align: var(--center);
+}
+table{
+    
+   border: var(--table-border);
+   margin: 50px 500px ;
+
+}
+main p{
+    font-family: cursive;
+    font-size: larger;
+    /* color: rgb(143, 6, 143); */
+    color: var(--content-color);
+    padding: 0px var(--padding-primary);
+}
+
+caption{
+    padding: var(--padding-primary);
+    font-size: var(--font-size);
+}
+th, td{
+    
+    padding: var(--padding-secondary);
+     
+}
+.button{
+    border: var(--none);
+    font-family: inherit;
+    font-size: var(--button-font-size);
+    text-decoration: var(--none);
+    background-color: var(--button-submit-bg) ;
+    color: var(--tertiary-font-color);
+    padding: var(--padding-secondary);
+    border-radius: 3px;
+    /* border-bottom: 2px solid #1f1e1f; */
+    box-shadow: var(--box-shadow);
+    /* transition-duration: 0.2s;
+    transition-property: opacity;  */
+    
+    transition: opacity 0.2s;    /* shorthand of transition */
+}
+.button:hover, .button:focus{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@keyframes color-change{
+    0%{
+        fill: var(--animation-sun);
+        
+    }
+    50%{
+        fill: var(--animation-sun-transition50);
+        transform: scale(2,2);
+    }
+    75%{
+        fill: var(--animation-sun-transition75);
+    }
+    100%{
+        fill: var(--animation-sun-transition100);
+    }
+}
+.sun{
+    /* animation-duration: 2s;
+    animation-name: color-change;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+    /* shorthand */
+    animation: 4s color-change infinite alternate linear;
+    
+}
+@keyframes cloud-move{
+    from{
+        transform: translate(0,50px);
+    }
+    to{
+        transform: translate(200px, 50px);
+    }
+}
+.cloud-front{
+    /* long way */
+    /* animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+
+    /*  shorthand */
+    animation: 20s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse{
+    from{
+        transform: translate(446px, 48px);
+    }
+    to{
+        transform: translate(100px, 48px);
+    }
+}
+.cloud-back{
+    animation: 10s cloud-move-reverse infinite alternate linear;
+}
+
+
+.page-footer{
+    /* text-align: center;
+    margin: 300px; */
+    display: var(--page-header-footer);
+    clear: both;
+    flex-direction: column;
+    text-align: var(--center);
+    
+}
