@@ -71,9 +71,17 @@ text-align: right;
 
 h1{
     text-align: center;
-    
+    margin-top:2px;
 }
+.about-me{
+    text-align: center;
+}
+table{
+    
+   border: 2px solid #2125ad;
+   margin: 50px 500px ;
 
+}
 main p{
     font-family: cursive;
     font-size: larger;
@@ -86,29 +94,14 @@ caption{
     padding: 20px;
     font-size: 20px;
 }
-table{
-    
-    border: 1.5px solid #2125ad;
-    border-collapse: collapse;
-    /* Align the table */
-    margin: 0 auto; 
- 
- }
 th{
-    border: 1px solid #2125ad;
-    text-align: center;
+    
     padding: 10px;
      
 }
 td{
-    border: 1px solid #2125ad;
-    text-align: center;
+    
     padding: 10px;
-     
-}
-.about-me_item{
-    text-align: center;
-    margin: 50px 0;
      
 }
 .button{
