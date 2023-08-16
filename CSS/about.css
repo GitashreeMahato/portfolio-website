@@ -16,7 +16,7 @@
     --none: none;
     --center: center;
 
-    --table-border: 2px solid #2125ad;
+    --table-border: 1.5px solid #2125ad;
     --button-font-size:16px;
     --button-submit-bg: #2c662c;
     --box-shadow:1.5px 1.5px #1f1e1f;
@@ -84,17 +84,9 @@ text-align: right;
 
 h1{
     text-align: var(--center);
-    margin-top:2px;
-}
-.about-me{
-    text-align: var(--center);
-}
-table{
     
-   border: var(--table-border);
-   margin: 50px 500px ;
-
 }
+
 main p{
     font-family: cursive;
     font-size: larger;
@@ -107,9 +99,23 @@ caption{
     padding: var(--padding-primary);
     font-size: var(--font-size);
 }
-th, td{
+table{
     
+    border: var(--table-border);
+    border-collapse: collapse;
+    /* Align the table */
+    margin: 0 auto; 
+ 
+ }
+th, td{
+    border: 1px solid #2125ad;
+    text-align: var(--center);
     padding: var(--padding-secondary);
+     
+}
+.about-me_item{
+    text-align: center;
+    margin: 50px 0;
      
 }
 .button{
