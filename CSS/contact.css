@@ -90,7 +90,7 @@ text-align: right;
     text-decoration: var(--none);
 }
 
-.contact{
+.contact-me{
     margin-top: 0%;
     /* padding: 0px; */
     font-size: var(--font-size);
@@ -119,10 +119,6 @@ button{
     margin-top: 50px;
     border-radius: 8px;
     border-bottom: 2px solid rgb(0, 255, 64); 
-}
-div button a{
-    text-decoration: var(--none);
-    color: var(--tertiary-color-white);
 }
 
 .primary_button{
