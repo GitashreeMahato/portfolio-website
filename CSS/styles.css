@@ -67,9 +67,37 @@ text-align: right;
     margin-left: 15px;
 }  
 .navigation-list__item{
-    transition: var(--nav-transition) ;
+    
     position: relative;
     cursor: pointer;
+    padding: 5px;
+    text-decoration: var(--text-decoration-style);
+}
+.navigation-list__item::before{
+    top: 0px;
+    left: 0px;
+}
+.navigation-list__item::after{
+    right: 0px;
+    bottom: 0px;
+}
+.navigation-list__item::before, 
+.navigation-list__item::after{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    /* height refers thickness of the border of nav items */
+    height: 1.5px;   
+    content: "";
+    background: #226b2b;
+    transition: all 0.3s;
+   
+    
+}
+.navigation-list__item:hover::before, .navigation-list__item:hover::after{
+opacity: 1;
+/* width  */
+width: 100%;
 }
 .navigation-list__item:hover, .navigation-list__item:hover{
     cursor: pointer;
