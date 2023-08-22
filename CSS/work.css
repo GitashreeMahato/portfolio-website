@@ -117,7 +117,8 @@ h1{
     /* grid-template-rows: 1 fr; */
     /* grid-template-rows: 300px 300px; */
     grid-gap: var(--gap);
-    padding: var(--padding-tertiary);
+    padding: var(--padding-primary);
+    margin-bottom: 100px;
 }
 .grid_item{
     background-color: #bcc2cb;
@@ -153,8 +154,10 @@ h1{
     clear: both;
     flex-direction: column;
     text-align: var(--center);
+    /* background-color: #184fbc; */
     
 }
+
 @media all and (max-width: 500px){
     .grid{
         grid-template-columns: 1fr;
