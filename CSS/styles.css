@@ -45,6 +45,7 @@ body{
     display: var(--page-header-footer);
     width: 100%;
     padding: var(--header-padding);
+    /* background-color: #226b6a; */
     
 }
 .page-header__item{
@@ -117,6 +118,8 @@ width: 100%;
 .profile{
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 267px;
+    /* padding-top: 100px; */
 
 }
 .profile span{
@@ -126,9 +129,9 @@ width: 100%;
 .profile_portrait{
     float: left;
     margin-right: 40px;
+    /* margin-bottom: 29%; */
     width: 300px;
-    max-width: 50%;
-    /* height: auto; */
+    height: 300px;
     border-radius: 50%;
 }
 div a{
@@ -159,7 +162,13 @@ div a:active{
     clear: both;
     flex-direction: column;
     text-align: center;
+    background-color: #226b6a;
+    /* margin-top: 20px; */
+    /* height: 100px; */
     
+}
+.page-footer p{
+    color: #ffffff;
 }
 
 
