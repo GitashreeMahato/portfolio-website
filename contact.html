@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
     <link rel="stylesheet" href="./CSS/contact.css">
     <!-- <link rel="stylesheet" href="CSS/contact.production.css"> -->
 </head>
@@ -48,38 +50,38 @@
         <h1>Contact</h1>
 
         <div>
-            <p class="message">For any quires, please contact me via email, phone no or skype or fill the below form.
+            <p class="message">For any quires, please contact me via email, phone no or zoom or fill the below form.
             </p>
 
             <form action="contact-form" class="contact-form" method="post" target="_blank">
 
                 <div class="contact-form_items">
-                    <label class="standard-label" for="contact-fn">Enter First Name : </label>
-                    <input type="text" id="contact-fn" name="lname" class="form-control" required placeholder="Enter First Name">
+                    <!-- <label class="standard-label" for="contact-fn">Enter First Name : </label> -->
+                    <input type="text" id="contact-fn" name="lname" class="form-control" required placeholder="Enter your name">
                 </div>
 
-                <div class="contact-form_items">
-                    <label class="standard-label" for="contact-ln">Enter Last Name : </label>
-                    <input type="text" id="contact-ln" class="form-control" name="lname" placeholder="Enter Last Name">
-                </div>
+                <!-- <div class="contact-form_items"> -->
+                    <!-- <label class="standard-label" for="contact-ln">Enter Last Name : </label> -->
+                    <!-- <input type="text" id="contact-ln" class="form-control" name="lname" placeholder="Enter Last Name">
+                </div> -->
 
                 <div class="contact-form_items">
-                    <label class="standard-label" for="contact-email">Email id : </label>
+                    <!-- <label class="standard-label" for="contact-email">Email id : </label> -->
                     <input type="email" id="contact-email" class="form-control" name="email" required placeholder="Enter Email">
                 </div>
 
                 <div class="contact-form_items">
-                    <label class="standard-label" for="contact-phone"> Mobile no : </label>
+                    <!-- <label class="standard-label" for="contact-phone"> Mobile no : </label> -->
                     <input type="text" id="contact-phone" name="phone" class="form-control" pattern="[\+]\d{2}[\]\d{3}\d{8}" placeholder="Enter Mobile no">
                 </div>
 
-                <div class="contact-form_items">
+                <!-- <div class="contact-form_items">
                     <label class="standard-label" for="db">Enter Date of Birth : </label>
                     <input type="date" id="db" name="DOB" class="form-control">
 
-                </div>
+                </div> -->
 
-                <div class="radio-group">
+                <!-- <div class="radio-group">
                     <b>Gender : </b>
                     <input type="radio" name="gender" id="mm" class="radio-group-btm">
                     <label class="standard-label" for="mm" >Male</label>
@@ -87,7 +89,7 @@
                     <input type="radio" name="gender" id="ff" class="radio-group-btm">
                     <label class="standard-label" for="ff">Female</label>
 
-                </div>
+                </div> -->
 
                 <div class="contact-form_items" >
                     <label class="standard-label" for="contact-message">Message : </label>
@@ -95,18 +97,16 @@
                     <input type="submit" value="Send Message" class="sm">
                 </div>
 
-                <button class="primary_button large_button"> Submit</button>
+                <!-- <button class="primary_button large_button"> Submit</button> -->
 
 
             </form>
 
        </div>
-
+       <div class="contact-info">
         <div class="c-address">
             <h2>Gitashree Mahato</h2>
-            <p>Lohmühlenstraße 65</p>
-            <p>12435 Berlin</p>
-            <p>Deutschland</p>
+            <p>Lohmühlenstraße 65 12435 Berlin, Deutschland</p>
         </div>
 
 
@@ -120,8 +120,10 @@
 
                 </li>
             </ul>
+       </div>
+        
 
-            <button class="secondary_button large_button">Call me via Skype</button>
+            <!-- <button class="secondary_button large_button">Call me via Zoom</button> -->
 
         </div>
 
