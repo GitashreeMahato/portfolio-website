@@ -159,7 +159,7 @@ div a:active{
     /* text-align: center;
     margin: 300px; */
     display: var(--page-header-footer);
-    clear: both;
+    /* clear: both; */
     flex-direction: column;
     text-align: center;
     background-color: #226b6a;
@@ -168,7 +168,7 @@ div a:active{
     
 }
 .page-footer p{
-    color: #ffffff;
+    color: #492a4f;
 }
 
 
