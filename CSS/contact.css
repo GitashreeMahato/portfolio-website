@@ -1,5 +1,5 @@
 :root{
-    --primary-background-color: #b2cbdb;
+    --primary-background-color: #dffffd;;
     --secondary-color: #5d0d58;
     --content-color: #810578;
     --highlighted: #184fbc;
@@ -51,7 +51,7 @@ body{
     font-weight: var(--font-thickness);
     font-family: 'Crimson Text', serif;
     font-size: var(--font-size);
-    line-height: 1.6;
+    line-height: 1.1;
     text-decoration: var(--none);
     
 
@@ -159,6 +159,7 @@ width: 100%;
     height: 30px;
     margin-left: 630px;
     font-size: smaller;
+    text-align: center;
     
 }
 .standard-label{
@@ -239,6 +240,7 @@ button{
 .large_button{
     font-size: var(--font-size);
     padding: var(--padding-tertiary) var(--padding-primary);
+    margin-bottom:40px ;
    
 }
 
@@ -246,7 +248,7 @@ button{
     margin-bottom: 50px;
 } */
 .c-address{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .contact-list{
 list-style: var(--none);
@@ -272,14 +274,20 @@ list-style: var(--none);
     opacity: 0.8;
 }
 .contact-email{
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px; 
+}
+.contact-info{
+    text-align: center;
 }
 .page-footer{
-    text-align: var(--center);
-    flex-direction: column;
+    /* text-align: center;
+    margin: 300px; */
     display: var(--page-header-footer);
     clear: both;
-    padding-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    background-color: #226b6a;
+    /* margin-top: 20px; */
+    /* height: 100px; */
     
 }
