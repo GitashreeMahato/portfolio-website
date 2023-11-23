@@ -242,16 +242,11 @@ svg{
 
 
 .page-footer{
-    /* text-align: center;
-    margin: 300px; */
     display: var(--page-header-footer);
     clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #226b6a;
-    /* margin-top: 20px; */
-    /* height: 100px; */
-    
+    background-color: #226b6a;  
 }
 .page-footer p{
     color: #ffffff;
