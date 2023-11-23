@@ -46,90 +46,59 @@
 
     <!--      main     section       -->
 
-    <main class="contact-me">
-        <h1>Contact</h1>
-
-        <div>
-            <p class="message">For any quires, please contact me via email, phone no or zoom or fill the below form.
-            </p>
-
-            <form action="contact-form" class="contact-form" method="post" target="_blank">
-
-                <div class="contact-form_items">
-                    <!-- <label class="standard-label" for="contact-fn">Enter First Name : </label> -->
-                    <input type="text" id="contact-fn" name="lname" class="form-control" required placeholder="Enter your name">
-                </div>
-
-                <!-- <div class="contact-form_items"> -->
-                    <!-- <label class="standard-label" for="contact-ln">Enter Last Name : </label> -->
-                    <!-- <input type="text" id="contact-ln" class="form-control" name="lname" placeholder="Enter Last Name">
-                </div> -->
-
-                <div class="contact-form_items">
-                    <!-- <label class="standard-label" for="contact-email">Email id : </label> -->
-                    <input type="email" id="contact-email" class="form-control" name="email" required placeholder="Enter Email">
-                </div>
-
-                <div class="contact-form_items">
-                    <!-- <label class="standard-label" for="contact-phone"> Mobile no : </label> -->
-                    <input type="text" id="contact-phone" name="phone" class="form-control" pattern="[\+]\d{2}[\]\d{3}\d{8}" placeholder="Enter Mobile no">
-                </div>
-
-                <!-- <div class="contact-form_items">
-                    <label class="standard-label" for="db">Enter Date of Birth : </label>
-                    <input type="date" id="db" name="DOB" class="form-control">
-
-                </div> -->
-
-                <!-- <div class="radio-group">
-                    <b>Gender : </b>
-                    <input type="radio" name="gender" id="mm" class="radio-group-btm">
-                    <label class="standard-label" for="mm" >Male</label>
-
-                    <input type="radio" name="gender" id="ff" class="radio-group-btm">
-                    <label class="standard-label" for="ff">Female</label>
-
-                </div> -->
-
-                <div class="contact-form_items" >
-                    <label class="standard-label" for="contact-message">Message : </label>
-                    <textarea id="contact-message" name="message" maxlength="300" required></textarea>
-                    <input type="submit" value="Send Message" class="sm">
-                </div>
-
-                <!-- <button class="primary_button large_button"> Submit</button> -->
-
-
-            </form>
-
-       </div>
-       <div class="contact-info">
-        <div class="c-address">
-            <h2>Gitashree Mahato</h2>
-            <p>Lohmühlenstraße 65 12435 Berlin, Deutschland</p>
+    <main>
+        <div class="contact_form">
+          <h1>Contact</h1>
+          <h2>Gitashree Mahato</h2>
+          <p>
+            Lohmühlenstraße 65 12435 Berlin, 
+             <br >
+             Deutschland
+          </p>
+  
+          <!-- just form -->
+  
+          <form action="/" method="post">
+            <div class="form_item">
+              <!-- <label class="form_label" for="email">E-mail: </label> -->
+              <input
+                class="form_input"
+                type="email"
+                id="email"
+                placeholder="Email"
+                style="font-family: inherit"
+                required
+              >
+            </div>
+  
+            <div class="form_item">
+              <!-- <label class="form_label" for="tel">Telephone: </label> -->
+              <input
+                class="form_input"
+                type="tel"
+                id="tel"
+                placeholder="Phone number"
+                style="font-family: inherit"
+                required
+              >
+            </div>
+  
+            <div class="form_item">
+              <!-- <label class="form_label" for="message">Message: </label> -->
+              <textarea
+                class="form_input"
+                maxlength="240"
+                id="message"
+                placeholder="Your message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+  
+            <div><button type="submit">Send message</button></div>
+          </form>
         </div>
-
-
-        <div>
-            <ul class="contact-list">
-                <li class="contact-email">
-                    Email : <a href="mailto:"> g@gmail.com</a>
-                </li>
-                <li class="contact-tel">
-                    Telephone: <a href="tel:+" aria-label="You can call me on this number">+49 123 4567 890000</a>
-
-                </li>
-            </ul>
-       </div>
-        
-
-            <!-- <button class="secondary_button large_button">Call me via Zoom</button> -->
-
-        </div>
-
-
-
-    </main>
+      </main>
 
     <!--       Footer   section          -->
 
@@ -146,3 +115,103 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="contact-form" class="contact-form" method="post" target="_blank">
+
+    <div class="contact-form_items"> -->
+        <!-- <label class="standard-label" for="contact-fn">Enter First Name : </label> -->
+        <!-- <input type="text" id="contact-fn" name="lname" class="form-control" required placeholder="Enter your name">
+    </div> -->
+
+    <!-- <div class="contact-form_items"> -->
+        <!-- <label class="standard-label" for="contact-ln">Enter Last Name : </label> -->
+        <!-- <input type="text" id="contact-ln" class="form-control" name="lname" placeholder="Enter Last Name">
+    </div> -->
+
+    <!-- <div class="contact-form_items"> -->
+        <!-- <label class="standard-label" for="contact-email">Email id : </label> -->
+        <!-- <input type="email" id="contact-email" class="form-control" name="email" required placeholder="Enter Email">
+    </div> -->
+
+    <!-- <div class="contact-form_items"> -->
+        <!-- <label class="standard-label" for="contact-phone"> Mobile no : </label> -->
+        <!-- <input type="text" id="contact-phone" name="phone" class="form-control" pattern="[\+]\d{2}[\]\d{3}\d{8}" placeholder="Enter Mobile no">
+    </div> -->
+
+    <!-- <div class="contact-form_items">
+        <label class="standard-label" for="db">Enter Date of Birth : </label>
+        <input type="date" id="db" name="DOB" class="form-control">
+
+    </div> -->
+
+    <!-- <div class="radio-group">
+        <b>Gender : </b>
+        <input type="radio" name="gender" id="mm" class="radio-group-btm">
+        <label class="standard-label" for="mm" >Male</label>
+
+        <input type="radio" name="gender" id="ff" class="radio-group-btm">
+        <label class="standard-label" for="ff">Female</label>
+
+    </div> -->
+
+    <!-- <div class="contact-form_items" >
+        <label class="standard-label" for="contact-message">Message : </label>
+        <textarea id="contact-message" name="message" maxlength="300" required></textarea>
+        <input type="submit" value="Send Message" class="sm">
+    </div> -->
+
+    <!-- <button class="primary_button large_button"> Submit</button> -->
+
+
+<!-- </form> -->
