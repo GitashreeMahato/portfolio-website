@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #dfd7e1;
-    --secondary-color: #a00b96;
+    --primary-color: #dffffd;;
+    --secondary-color: #5d0d58;
     --content-color: #810578;
     --highlighted: #184fbc;
     --tertiary-font-color: #ffffff;
@@ -248,7 +248,7 @@ svg{
     clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #4d1155;
+    background-color: #226b6a;
     /* margin-top: 20px; */
     /* height: 100px; */
     
