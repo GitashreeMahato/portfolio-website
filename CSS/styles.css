@@ -154,17 +154,17 @@ div a:active{
     color: var(--active);
 }
 
-
+.social-media a{
+    margin: 0 0.5rem;
+ }
 .page-footer{
-    /* text-align: center;
-    margin: 300px; */
     display: var(--page-header-footer);
-    /* clear: both; */
+    clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #226b6a;
-    /* margin-top: 20px; */
-    /* height: 100px; */
+    background-color: #2fd4e9;
+    /* margin-top: 96px; */
+    height: 130px;
     
 }
 .page-footer p{
