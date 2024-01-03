@@ -239,15 +239,18 @@ svg{
 .cloud-back{
     animation: 10s cloud-move-reverse infinite alternate linear;
 }
-
+.social-media a{
+    margin: 0 0.5rem;
+ }
 
 .page-footer{
     display: var(--page-header-footer);
     clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #226b6a;  
+    background-color: #2fd4e9;
+      
 }
 .page-footer p{
-    color: #ffffff;
+    color: #492a4f;
 }
