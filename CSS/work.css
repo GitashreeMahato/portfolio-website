@@ -29,7 +29,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #dffffd;;
+    background-color: #dffffd;
     color: var(--secondary-color);
     font-weight: var(--font-thickness);
     font-family: 'Crimson Text', serif;
@@ -71,7 +71,7 @@ text-align: right;
     padding: 5px;
     text-decoration: var(--none);
 }
-.navigation-list__item:hover, .navigation-list__item:hover{
+.navigation-list__item:hover{
     cursor: pointer;
     opacity: 0.8;
     text-decoration: var(--none);
