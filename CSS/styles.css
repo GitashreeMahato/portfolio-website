@@ -122,10 +122,10 @@ width: 100%;
     /* padding-top: 100px; */
 
 }
-.profile span{
+/* .profile span{
     background-color: var(--highlighted);
     color: var(--highlighted-font-color);
-}
+} */
 .profile_portrait{
     float: left;
     margin-right: 40px;
@@ -163,8 +163,9 @@ div a:active{
     flex-direction: column;
     text-align: center;
     background-color: #2fd4e9;
-    /* margin-top: 96px; */
-    height: 130px;
+    margin-top: 314px;
+    height: fit-content;
+    
     
 }
 .page-footer p{
