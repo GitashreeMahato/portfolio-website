@@ -1,6 +1,6 @@
 :root{
     --primary-background-color: #dffffd;;
-    --secondary-color: #5d0d58;
+    --secondary-color: #5c0856;
     --content-color: #810578;
     --highlighted: #184fbc;
     --tertiary-color-white: #ffffff;
@@ -22,7 +22,7 @@
     --button-font-size:16px;
     --button-secondary-bg: #2c662c;
     --box-shadow:1.5px 1.5px #1f1e1f;
-    --primary-button-bg: #0d458d;
+    --primary-button-bg: #c926b3;
     --primary-button-bg-hover-focus: #6f357b;
     --primary-button-bg-active: #268cd0;
     --secondary-button-bg: #2d10d1;
@@ -87,9 +87,9 @@ text-align: right;
     cursor: pointer;
     padding: 5px;
     text-decoration: var(--none);
+    color: #5c0856 ;
 }
-.navigation-list__item:hover, 
-.navigation-list__item:hover{
+.navigation-list__item:hover {
     cursor: pointer;
     opacity: 0.8;
     text-decoration: var(--none);
@@ -183,7 +183,7 @@ width: 100%;
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: #fb8500;
+    background-color: #865722;
     color: #e7fbfd;
     text-decoration: none;
     margin: 10px 0px;
@@ -203,13 +203,13 @@ width: 100%;
  }
 .page-footer{
    
-    margin-top: 92px;
+    margin-top: 115px;
     background-color: #2fd4e9;
     display: var(--page-header-footer);
     clear: both;
     flex-direction: column;
     text-align: center;
-    height: 122px;   
+    height: 100px;   
 }
 footer p{
     margin-top: 16px;
