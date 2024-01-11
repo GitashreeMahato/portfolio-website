@@ -19,7 +19,7 @@
     --table-border: 1.5px solid #2125ad;
     --button-font-size:16px;
     --button-submit-bg: #2c662c;
-    --box-shadow:1.5px 1.5px #1f1e1f;
+    /* --box-shadow:1.5px 1.5px #1f1e1f; */
 
     --animation-sun: #dcd732;
     --animation-sun-transition50: #a75511;
@@ -131,42 +131,55 @@ main p{
 }
 
 caption{
-    padding: var(--padding-primary);
+    /* padding: var(--padding-primary); */
     font-size: var(--font-size);
 }
+/* .myskill{
+    text-align: center;
+} */
 table{
     
     border: var(--table-border);
     border-collapse: collapse;
     /* Align the table */
     margin: 0 auto; 
+    /* text-align: center; */
+    /* align-items: center; */
  
  }
 th, td{
     border: 1px solid #2125ad;
-    text-align: var(--center);
+    /* text-align: var(--center); */
     padding: var(--padding-secondary);
      
 }
+.about-me{
+    margin: 0 auto;
+  max-width: 60%;
+  font-size: large;
+  text-align: center;
+}
 .about-me_item{
     text-align: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    margin-top: 15px;
      
 }
 .button{
     border: var(--none);
+    display: inline-block;
     font-family: inherit;
     font-size: var(--button-font-size);
     text-decoration: var(--none);
     background-color: var(--button-submit-bg) ;
     color: var(--tertiary-font-color);
     padding: var(--padding-secondary);
-    border-radius: 3px;
+    border-radius: 5px;
     /* border-bottom: 2px solid #1f1e1f; */
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
+    box-shadow: 5px 5px 10px #1f1e1f;
     /* transition-duration: 0.2s;
     transition-property: opacity;  */
-    
     transition: opacity 0.2s;    /* shorthand of transition */
 }
 .button:hover, .button:focus{
@@ -174,15 +187,54 @@ th, td{
     opacity: 0.8;
 }
 #about-picture{
-    margin: 0 350px;
-    margin-bottom: 150px;
+    /* margin: 0 350px;
+    margin-bottom: 150px; */
+    margin: 0 auto;
+  width: 80%;
     
 }
-svg{
+/* svg{
     height: 6%;
     width: 800px;
-}
+} */
+@media all and (max-width: 560px){
+    .navigation-list{
+        margin: 0 auto;; 
+        padding: 0;
+        font-size: 12px;
+        margin-right: -2rem;
+      }
+      .navigation-list li {
+        display: inline-flex;
+        padding: 2px;
+      }
+    .about-me{
+        max-width: 90%;
+        /* text-align: center; */
 
+    }
+}
+@media all and (min-width: 560px) and (max-width: 750px){
+    .about-me{
+        max-width: 90%;
+}
+}
+@media all and (max-width: 750px) {
+    .page-header__item:last-child {
+      text-align: center;
+      margin-right: 2rem;
+    }
+    .navigation-list__item {
+      font-size: 1rem;
+      padding: 5px;
+      margin: 0.5rem;
+    }
+    .page-header {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+}
 @keyframes color-change{
     0%{
         fill: var(--animation-sun);
@@ -248,7 +300,8 @@ svg{
     clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #2fd4e9;
+    margin-bottom: 0.5rem;
+        /* background-color: #2fd4e9; */
       
 }
 .page-footer p{
