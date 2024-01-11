@@ -172,6 +172,7 @@ th, td{
     background-color: var(--button-submit-bg) ;
     color: var(--tertiary-font-color);
     padding: var(--padding-secondary);
+    margin: 4rem 0;
     border-radius: 5px;
     /* border-bottom: 2px solid #1f1e1f; */
     /* box-shadow: var(--box-shadow); */
