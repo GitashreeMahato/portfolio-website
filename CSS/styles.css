@@ -16,10 +16,9 @@ visited link (green):#009900 */
     --active: #a02020;
     --font-thickness:400;
     --body-font-size: 20px;
-    --header-padding: 15px;
+    --header-padding: 20px;
     --transition: all 1s;
     --none: none;
-    --page-header-footer:flex;
 
 }
 
@@ -42,7 +41,7 @@ body{
 }
 
 .page-header{
-    display: var(--page-header-footer);
+    display: flex;
     width: 100%;
     padding: var(--header-padding);
     /* background-color: #226b6a; */
@@ -116,9 +115,9 @@ width: 100%;
 
 
 .profile{
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 267px;
+    max-width: 60%;
+    margin: 8% auto;
+    /* margin-bottom: 267px; */
     /* padding-top: 100px; */
 
 }
@@ -128,11 +127,10 @@ width: 100%;
 } */
 .profile_portrait{
     float: left;
-    margin-right: 40px;
-    /* margin-bottom: 29%; */
-    width: 300px;
+    margin-right: 10%;
+    width: 40%;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 0.5rem;
 }
 div a{
     color: var(--links);
@@ -158,19 +156,75 @@ div a:active{
     margin: 0 0.5rem;
  }
 .page-footer{
-    display: var(--page-header-footer);
+    display: flex;
     clear: both;
     flex-direction: column;
     text-align: center;
-    background-color: #2fd4e9;
-    margin-top: 287px;
+    /* background-color: #2fd4e9; */
+    margin-top: 2rem;
     height: fit-content;
+    margin-bottom: 0.5rem;
     
     
 }
 .page-footer p{
     color: #492a4f;
 }
+@media all and (max-width: 560px) {
+    .navigation-list{
+        margin: 0 auto;; 
+        padding: 0;
+        font-size: 12px;
+        margin-right: -2rem;
+      }
+      .navigation-list li {
+        display: inline-flex;
+        padding: 2px;
+      }
+    .profile {
+      max-width: 70%;
+      margin: 10% auto;
+      display: grid;
+      text-align: center;
+    }
+    .profile_portrait {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    @media all and (min-width: 560px) and (max-width: 750px) {
+        .profile {
+          max-width: 80%;
+          margin: 5% auto;
+          display: block;
+        }
+        
+        .profile_portrait {
+          float: left;
+          width: 40%;
+          margin-right: 10%;
+          border-radius: 0.5rem;
+        }
+    }
+    @media all and (max-width: 750px) {
+        .page-header__item:last-child {
+          text-align: center;
+          margin-right: 2rem;
+        }
+        .navigation-list__item {
+          font-size: 1rem;
+          padding: 5px;
+          margin: 0.5rem;
+        }
+        .page-header {
+          display: block;
+          text-align: center;
+          margin: 0;
+        }
+
+      }
 
 
 
