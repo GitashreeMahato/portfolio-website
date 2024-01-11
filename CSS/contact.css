@@ -204,7 +204,8 @@ width: 100%;
 .page-footer{
    
     margin-top: 53px;
-    background-color: #2fd4e9;
+    margin-bottom: 0.5rem;
+    /* background-color: #2fd4e9; */
     display: var(--page-header-footer);
     clear: both;
     flex-direction: column;
@@ -215,3 +216,32 @@ footer p{
     margin-top: 16px;
     color: #492a4f;
 }
+@media all and (max-width: 560px) {
+  .navigation-list{
+      margin: 0 auto;
+      padding: 0;
+      font-size: 12px;
+      margin-right: -2rem;
+    }
+    .navigation-list li {
+      display: inline-flex;
+      padding: 2px;
+    }
+  }
+  @media all and (max-width: 750px) {
+      .page-header__item:last-child {
+        text-align: center;
+        margin-right: 2rem;
+      }
+      .navigation-list__item {
+        font-size: 1rem;
+        padding: 5px;
+        margin: 0.5rem;
+      }
+      .page-header {
+        display: block;
+        text-align: center;
+        margin: 0;
+      }
+
+    }
