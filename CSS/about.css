@@ -134,9 +134,7 @@ caption{
     /* padding: var(--padding-primary); */
     font-size: var(--font-size);
 }
-/* .myskill{
-    text-align: center;
-} */
+
 table{
     
     border: var(--table-border);
