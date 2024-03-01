@@ -113,18 +113,11 @@ opacity: 1;
 width: 100%;
 }
 
-
 .profile{
     max-width: 60%;
     margin: 8% auto;
-    /* margin-bottom: 267px; */
-    /* padding-top: 100px; */
-
 }
-/* .profile span{
-    background-color: var(--highlighted);
-    color: var(--highlighted-font-color);
-} */
+
 .profile_portrait{
     float: left;
     margin-right: 10%;
@@ -142,10 +135,6 @@ div a:hover, div a:focus{
     /* border: 2px solid #f21c1c; */
     text-decoration: var(--none);
 }
-/* div a:visited{
-
-    color:#213421;
-} */
 
 /* when clicked the link */
 div a:active{
@@ -166,6 +155,10 @@ div a:active{
     margin-bottom: 0.5rem;
     
     
+}
+/* about me */
+.skills-container{
+    display: none;
 }
 .page-footer p{
     color: #492a4f;
