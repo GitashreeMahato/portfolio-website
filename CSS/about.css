@@ -123,7 +123,7 @@ h1{
 }
 
 main p{
-    font-family: cursive;
+    /* font-family: cursive; */
     font-size: larger;
     /* color: rgb(143, 6, 143); */
     color: var(--content-color);
